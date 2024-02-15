@@ -40,7 +40,11 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB6-LD-SB8" userLabel="Like Button">
-                                                    <rect key="frame" x="356" y="4" width="42" height="42"/>
+                                                    <rect key="frame" x="354" y="4" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="6Ju-Wp-TZi"/>
+                                                        <constraint firstAttribute="width" constant="44" id="vte-gI-tdn"/>
+                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="like_button_on"/>
                                                 </button>
@@ -55,12 +59,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="jnD-zt-8fw" secondAttribute="trailing" constant="16" id="06g-PC-Cjg"/>
                                                 <constraint firstItem="jnD-zt-8fw" firstAttribute="leading" secondItem="oJ0-1s-MwL" secondAttribute="leading" constant="16" id="0FH-Yq-685"/>
-                                                <constraint firstItem="jnD-zt-8fw" firstAttribute="trailing" secondItem="eB6-LD-SB8" secondAttribute="trailing" id="2mG-EN-Lay"/>
                                                 <constraint firstItem="jnD-zt-8fw" firstAttribute="bottom" secondItem="9k9-wD-nwt" secondAttribute="bottom" constant="8" id="Dyo-fa-Nfn"/>
                                                 <constraint firstAttribute="bottom" secondItem="jnD-zt-8fw" secondAttribute="bottom" constant="4" id="Txb-OM-VQO"/>
-                                                <constraint firstItem="eB6-LD-SB8" firstAttribute="top" secondItem="jnD-zt-8fw" secondAttribute="top" id="YIN-F6-ogy"/>
                                                 <constraint firstItem="jnD-zt-8fw" firstAttribute="top" secondItem="oJ0-1s-MwL" secondAttribute="top" constant="4" id="eFt-in-Kzg"/>
                                                 <constraint firstItem="jnD-zt-8fw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9k9-wD-nwt" secondAttribute="trailing" constant="8" id="ghx-v6-wmT"/>
+                                                <constraint firstItem="eB6-LD-SB8" firstAttribute="top" secondItem="jnD-zt-8fw" secondAttribute="top" id="iWO-xQ-h05"/>
+                                                <constraint firstItem="jnD-zt-8fw" firstAttribute="trailing" secondItem="eB6-LD-SB8" secondAttribute="trailing" id="sCs-x8-dPL"/>
                                                 <constraint firstItem="9k9-wD-nwt" firstAttribute="leading" secondItem="jnD-zt-8fw" secondAttribute="leading" constant="8" id="wzy-SI-iAu"/>
                                             </constraints>
                                         </tableViewCellContentView>
