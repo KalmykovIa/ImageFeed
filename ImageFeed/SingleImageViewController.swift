@@ -19,8 +19,8 @@ final class SingleImageViewController: UIViewController {
         }
     }
     
-    @IBOutlet var shareButton: UIButton!
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet private var shareButton: UIButton!
+    @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var imageView: UIImageView!
     
     override func viewDidLoad() {

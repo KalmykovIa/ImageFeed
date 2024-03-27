@@ -10,12 +10,24 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    var imageView = UIImageView()
-    var userNameLabel = UILabel()
-    var userLoginLabel = UILabel()
-    var discriptionLabel = UILabel()
+    private lazy var imageView = UIImageView()
+    private lazy var userNameLabel = UILabel()
+    private lazy var userLoginLabel = UILabel()
+    private lazy var discriptionLabel = UILabel()
+    private lazy var button : UIButton = {
+        let button = UIButton()
+        let image = UIImage(named: "logoutButton")
+        button.setImage(image, for: .normal)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     override func viewDidLoad() {
+        setupView()
+    }
+    
+    func setupView() {
         creatProfileImage()
         creatLogoutButton()
         creatUserNameLabel()
@@ -39,14 +51,6 @@ final class ProfileViewController: UIViewController {
     }
     
     func creatLogoutButton() {
-        let button = UIButton.systemButton(
-            with: UIImage(systemName: "ipad.and.arrow.forward")!,
-            target: self,
-            action: #selector(Self.didTapButton)
-        )
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .red
         view.addSubview(button)
         NSLayoutConstraint.activate([
             button.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
@@ -101,6 +105,6 @@ final class ProfileViewController: UIViewController {
     
     
     @objc func didTapButton() {
-        
+
     }
 }

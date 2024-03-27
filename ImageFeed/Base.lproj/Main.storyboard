@@ -40,8 +40,8 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="chI-D1-kbe" kind="relationship" relationship="viewControllers" id="vhY-JY-QDS"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Aze-Cj-3jQ"/>
+                        <segue destination="chI-D1-kbe" kind="relationship" relationship="viewControllers" id="PDb-Qv-EbK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHF-gB-ioA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
